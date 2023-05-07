@@ -1,0 +1,77 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.app {
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/pexels-gabriel-peter-696680.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.card {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	height: 20%;
+	border-radius: 25px;
+	padding: 9%;
+	background-color: #f0f2f4;
+	box-shadow: 5px 5px 50px 50px rgba(103, 103, 103, 0.2);
+}
+
+.heading {
+	display: flex;
+	align-items: center;
+	height: 580px;
+	margin-bottom: 60px;
+}
+
+.button {
+	position: absolute;
+	bottom: 20px;
+	margin-top: 25px;
+	border-radius: 20px;
+	border: 1px solid #1B2E3B;
+	padding: 10px 25px 10px 25px;
+	background-color: white;
+	font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+	color: #1B2E3B;
+	transition: ease 0.5s;
+}
+
+.button:hover {
+	background-color: #2c6c91;
+	color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	.card {
+		padding: 20px;
+	}
+	.heading {
+		font-size: 12px;
+		margin-bottom: 40px;
+	}
+	.button {
+		font-weight: 400;
+		font-size: 9px;
+		padding: 5px 12px 5px 12px;
+	}
+}
